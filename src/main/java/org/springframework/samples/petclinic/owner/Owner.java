@@ -128,6 +128,7 @@ public class Owner extends Person {
      */
     public Pet getPet(String name, boolean ignoreNew) {
         name = name.toLowerCase();
+        System.out.println("Owner Name:::::"+name);
         for (Pet pet : getPetsInternal()) {
             if (!ignoreNew || !pet.isNew()) {
                 String compName = pet.getName();
